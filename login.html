@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-image: url('Image/Background.jpg'); background-repeat: no-repeat;background-size: cover;">
+    <div class="content">
+        <div class="Form" id="Form">
+            <form id="LoginForm" class="LoginForm">
+            <p class="Sign-in">Sign in</p>
+            <h6 id="h6" class="h6">This email don't have account yet </h6>
+            <input onchange="ClearAlert()" class="input-box" type="email" id="email" autocomplete="off" placeholder="Email"> 
+            <input onchange="ClearAlert()" class="input-box" type="password" id="password" autocomplete="off" placeholder="Password">
+            <button onclick="checkUser()" class="btn-login" id="btn-login" type="submit" >Login</button>
+            <p> Don't have account ? <a href="#" id="Switch-Resgister" class="Switch">Register</a></p>
+            </form>
+            <form id="ResgisterForm" class="ResgisterForm">
+            <p class="Sign-in">Resgister</p>
+            <input class="input-box" id="userName" placeholder="Username" type="text" >
+            <input class="input-box" type="email" id="RegisterEmail" autocomplete="off" placeholder="Email"> 
+            <input class="input-box" type="password" id="RegisterPassword" autocomplete="off" placeholder="Password">
+            <button class="btn-login" id="btn-register" type="submit" onclick="CreateAccount()">Sign up</button>
+            <p>I have an account <a href="#" id="Switch-Login" class="Switch">Login</a></p>
+            </form>
+        </div>  
+    </div>
+   <script src="script.js"></script>
+</body>
+</html>

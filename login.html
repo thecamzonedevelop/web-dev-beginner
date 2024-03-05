@@ -5,10 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
 </head>
-<body style="background-image: url('Image/Background.jpg'); background-repeat: no-repeat;background-size: cover;">
-    <div class="content">
+<body >
+    <header class="header">
+        <a class="Logo-Name">Sbek jerng.Tinh</a>
+        <nav class="Navbar">
+            <a href="#">Home</a>
+            <a href="#">Service</a>
+            <a href="#">Product</a>
+            <a href="#">About</a>
+            <button onclick="getStarted()" class="btn-getstarted">Get Started</button>
+        </nav>
+    </header>
         <div class="Form" id="Form">
+            <span onclick="closeIcon()" class="x-icon"><i class="fa-solid fa-xmark"></i></span>
             <form id="LoginForm" class="LoginForm">
             <p class="Sign-in">Sign in</p>
             <h6 id="h6" class="h6">This email don't have account yet </h6>
@@ -25,8 +36,12 @@
             <button class="btn-login" id="btn-register" type="submit" onclick="CreateAccount()">Sign up</button>
             <p>I have an account <a href="#" id="Switch-Login" class="Switch">Login</a></p>
             </form>
-        </div>  
-    </div>
+        </div>
+          <div class="Product">
+          </div>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+        <script src="https://kit.fontawesome.com/24b0e50280.js" crossorigin="anonymous"></script>
    <script src="script.js"></script>
 </body>
 </html>

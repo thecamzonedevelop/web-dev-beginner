@@ -43,12 +43,12 @@ body{
     border-radius: 0px 0px 0px 15px;
     right: 0px;
     color: white;
-    background-color: rgb(66, 66, 66);
+     background-color: rgb(230, 0, 0);
     cursor: pointer;
 }
 .x-icon:hover{
     transition: .15s;
-    background-color: rgb(0, 0, 0);
+   background-color: rgb(172, 2, 2);
 }
 .Form.active-close{
     transition: 0.15s ease-out;
@@ -83,7 +83,7 @@ body{
     margin-left: 10px;
     border-radius: 5px;
     font-size: 15px;
-    background-color: rgb(64, 64, 255);
+    background-color: rgb(64, 64, 255) !important ;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     color: white;
     cursor: pointer;
@@ -113,6 +113,10 @@ body{
 }
 p{
     width: 200px;
+}
+.Switch{
+    text-decoration-line:underline;
+    color: blue;
 }
 h6{
     position:absolute;
